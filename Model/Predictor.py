@@ -1,0 +1,170 @@
+import os
+import time
+import torch
+import torch.nn as nn
+import torchvision.transforms as transforms
+import numpy as np
+from tqdm import tqdm
+from Data import ImageDataset
+from Model import UNet
+
+
+class EnergyPredictorV2_image2heightmap():
+    def __init__(self,
+                 train_src_folder_path : str,
+                 test_src_folder_path : str,
+                 heightmap_src_folder_path: str,
+                 checkpoint_folder_path: str,
+                 train_batch_size: int = 16,
+                 test_batch_size: int = 16,
+                 num_epochs: int = 5):
+
+        if train_src_folder_path is None:
+            raise AttributeError("[ERROR] the attribute 'train_src_folder_path' for EnergyPredictorV2_image2heightmap is missing")
+        if test_src_folder_path is None:
+            raise AttributeError("[ERROR] the attribute 'test_src_folder_path' for EnergyPredictorV2_image2heightmap is missing")
+        if heightmap_src_folder_path is None:
+            raise AttributeError("[ERROR] the attribute 'heightmap_src_folder_path' for EnergyPredictorV2_image2heightmap is missing")
+        if checkpoint_folder_path is None:
+            raise AttributeError("[ERROR] the attribute 'checkpoint_folder_path' for EnergyPredictorV2_image2heightmap is missing")
+
+        self.train_src_folder_path = train_src_folder_path
+        self.test_src_folder_path = test_src_folder_path
+        self.heightmap_src_folder_path = heightmap_src_folder_path
+        self.checkpoint_folder_path = checkpoint_folder_path
+        self.train_batch_size = train_batch_size
+        self.test_batch_size = test_batch_size
+        self.num_epochs = num_epochs
+
+        # stipulate the training device
+        # device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        # choose acceleration platform
+        if torch.cuda.is_available():
+            self.device = 'cuda'
+        else:
+            self.device = 'cpu'
+
+        self.img_transforms = {
+            'train': transforms.Compose([
+                transforms.Grayscale(),
+                transforms.ToTensor(),
+                transforms.Normalize([0.5], [0.5])
+            ]),
+            'test': transforms.Compose([
+                transforms.Grayscale(),
+                transforms.ToTensor(),
+                transforms.Normalize([0.5], [0.5])
+            ]),
+        }
+
+        self.trainset = ImageDataset.Image2HeightmapDataset(
+            image_src_folder_path=self.train_src_folder_path,
+            heightmap_src_folder_path=self.heightmap_src_folder_path,
+            transform=self.img_transforms['train']
+        )
+        self.testset = ImageDataset.Image2HeightmapDataset(
+            image_src_folder_path = self.test_src_folder_path,
+            heightmap_src_folder_path=self.heightmap_src_folder_path,
+            transform=self.img_transforms['test']
+        )
+
+        self.learning_rate = 0.1
+        self.model = UNet.UNet_modified().to(self.device)
+        self.loss_fn = nn.MSELoss(reduction='sum').to(self.device)
+        self.lr = 0.001
+        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.lr)
+        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, mode='min', factor=0.8, patience=5, verbose=True)
+
+        self.test_loss_min = np.Inf
+
+    def train(self, cur_epoch):
+        # the train loader for the whole dataset
+        train_loader = torch.utils.data.DataLoader(self.trainset, batch_size=self.train_batch_size, shuffle=True, num_workers=4)
+
+        self.model.train(True)
+        print("Training...")
+
+        # to record the sum of training loss in all batches
+        train_loss_sum = 0
+
+        # start to input images and corresponding normalized matrix
+        loop = tqdm(enumerate(train_loader, 0), total=len(train_loader), position=0)
+        for batch_idx, data in loop:
+            # get the inputs; data is a list of [inputs, labels]
+            inputs, labels = data[0].to(self.device), data[1].to(self.device)
+            # zero the parameter gradients
+            self.optimizer.zero_grad()
+            # Forward propagation
+            outputs = self.model(inputs)
+            # calculate loss
+            loss = self.loss_fn(outputs, labels)
+            # add loss to the sum
+            train_loss_sum += loss
+            # update the parameter
+            self.optimizer.step()
+            loop.set_description(f'Epoch [{cur_epoch}/{self.num_epochs}]')
+            loop.set_postfix(loss=loss.item())
+
+        print("\n[INFO] Epoch {0}/{1} average training loss: {2}".format(cur_epoch, self.num_epochs, train_loss_sum / len(train_loader.dataset) * 1.0))
+        self.scheduler.step(train_loss_sum / len(train_loader.dataset) * 1.0)
+
+    def test(self, cur_epoch):
+        # the test loader for the whole dataset
+        test_loader = torch.utils.data.DataLoader(self.testset, batch_size=self.test_batch_size, shuffle=False, num_workers=4)
+
+        # State that you are testing the model; this prevents layers e.g. Dropout to take effect
+        self.model.eval()
+        print("Testing...")
+
+        # to record the sum of testing loss in all batches
+        test_loss_sum = 0
+
+        with torch.no_grad():
+            # Iterate over data
+            for data in tqdm(test_loader, total=len(test_loader), position=0):
+                images, labels = data[0].to(self.device), data[1].to(self.device)
+                outputs = self.model(images)
+                # Calculate & accumulate loss
+                test_loss_sum += self.loss_fn(outputs.data, labels).item()
+
+        print("\n[INFO] Epoch {}/{} average testing loss: {:.4f})\n".format(cur_epoch,
+                                                                 self.num_epochs,
+                                                                 test_loss_sum/len(test_loader.dataset)))
+
+    def save_model(self, timestamp):
+        save_path = os.path.join(self.checkpoint_folder_path,
+                            'PredictorV2_image2heightmap_{}'
+                            .format(time.strftime('%Y-%m-%d_%H-%M-%S', timestamp)))
+
+        if not os.path.exists(save_path):
+            print("[INFO] Create folder for storing current Checkpoint: {}".format(save_path))
+            os.makedirs(save_path)
+
+        torch.save(self.model, os.path.join(self.checkpoint_folder_path,
+                                            'model.pth'))
+
+    def check_optim(self, test_loss):
+        if test_loss < self.test_loss_min:
+            print('[INFO] average testing loss decreased ({:.6f} --> {:.6f}).  Saving model ...\n'.format(self.test_loss_min, test_loss))
+            self.save_model(self.time_start)
+
+    def start(self):
+        self.time_start = time.localtime()
+        for epoch in range(1, self.num_epochs+1):
+            self.train(epoch)
+            self.test(epoch)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
