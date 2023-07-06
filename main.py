@@ -1,5 +1,6 @@
 from Preprocessing import *
 from Model import *
+from Log import *
 
 if __name__ == '__main__':
     """
@@ -43,6 +44,10 @@ if __name__ == '__main__':
         train_src_folder_path='Train',
         test_src_folder_path='Test',
         heightmap_src_folder_path='Dataset/PowerCollection/Label_heightmap_normalized',
-        checkpoint_folder_path='Checkpoint'
+        checkpoint_folder_path='Checkpoint',
+        train_batch_size=4,
+        test_batch_size=4,
+        num_epochs=200,
+        device = 'cuda:1'
     )
     predictor.start()

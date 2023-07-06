@@ -1,0 +1,50 @@
+
+Training...
+
+[INFO] Epoch 1/5 average training loss: 826.5162963867188
+
+Testing...
+
+[INFO] Epoch 1/5 average testing loss: 822.1470
+
+--------------------------------------------------------------
+
+Training...
+
+[INFO] Epoch 2/5 average training loss: 818.1950073242188
+
+Testing...
+
+[INFO] Epoch 2/5 average testing loss: 819.8459
+
+--------------------------------------------------------------
+
+Training...
+
+[INFO] Epoch 3/5 average training loss: 815.79150390625
+
+Testing...
+
+[INFO] Epoch 3/5 average testing loss: 814.7930
+
+--------------------------------------------------------------
+
+Training...
+
+[INFO] Epoch 4/5 average training loss: 806.26708984375
+
+Testing...
+
+[INFO] Epoch 4/5 average testing loss: 816.6988
+
+--------------------------------------------------------------
+
+Training...
+
+[INFO] Epoch 5/5 average training loss: 802.0079956054688
+
+Testing...
+
+[INFO] Epoch 5/5 average testing loss: 803.1836
+
+--------------------------------------------------------------
