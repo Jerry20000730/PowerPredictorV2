@@ -138,6 +138,8 @@ class EnergyPredictorV2_image2heightmap():
                 # Calculate & accumulate loss
                 test_loss_sum += self.loss_fn(outputs.data, labels).item()
 
+        self.check_optim(test_loss_sum/len(test_loader.dataset))
+
         print("\n[INFO] Epoch {}/{} average testing loss: {:.4f}\n".format(cur_epoch,
                                                                  self.num_epochs,
                                                                  test_loss_sum/len(test_loader.dataset)))
@@ -152,13 +154,14 @@ class EnergyPredictorV2_image2heightmap():
             print("[INFO] Create folder for storing current Checkpoint: {}".format(save_path))
             os.makedirs(save_path)
 
-        torch.save(self.model, os.path.join(self.checkpoint_folder_path,
+        torch.save(self.model, os.path.join(save_path,
                                             'model.pth'))
 
     def check_optim(self, test_loss):
         if test_loss < self.test_loss_min:
             print('[INFO] average testing loss decreased ({:.6f} --> {:.6f}).  Saving model ...\n'.format(self.test_loss_min, test_loss))
             self.save_model(self.time_start)
+            self.test_loss_min = test_loss
 
     def start(self):
         self.time_start = time.localtime()

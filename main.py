@@ -47,7 +47,7 @@ if __name__ == '__main__':
         checkpoint_folder_path='Checkpoint',
         train_batch_size=4,
         test_batch_size=4,
-        num_epochs=200,
+        num_epochs=500,
         device = 'cuda:1'
     )
     predictor.start()
