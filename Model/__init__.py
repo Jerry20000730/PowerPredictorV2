@@ -1,1 +1,1 @@
-__all__ = ['Predictor', 'UNet']
+__all__ = ['Predictor', 'UNet', 'ResNet']

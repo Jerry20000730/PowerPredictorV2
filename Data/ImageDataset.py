@@ -1,8 +1,8 @@
 from torch.utils.data import Dataset
 from PIL import Image
 import numpy as np
+import pandas as pd
 import os
-import torch
 
 
 def get_info(filename):
@@ -26,6 +26,26 @@ def get_info(filename):
     return elements[0], elements[1], elements[2]
 
 
+def query_power(df, terrainID, position, direction):
+    """
+    This function takes a dataframe, terrainID, position, and direction as inputs and returns the
+    average power from the dataframe.
+
+    :param df: a pandas DataFrame containing power data for different terrains, positions, and
+    directions
+    :param terrainID: The ID of the terrain being queried for power data
+    :param position: The position parameter is an integer value representing the position of the car.
+    :param direction: The direction parameter is an integer that represents the direction of the car.
+
+    :return: a float value of the 'average_power' column from the input dataframe 'df' based on the
+    conditions specified in the query. The conditions are that the 'terrainID' column should match
+    the input 'terrainID', the 'position' column should match the input 'position' (converted to an
+    integer), and the 'direction' column should match the input 'direction'.
+    """
+    return float(df.loc[(df['terrainID'] == terrainID) & (df['position'] == int(position)) & (
+            df['direction'] == int(direction)), 'average_power'])
+
+
 class Image2HeightmapDataset(Dataset):
     """
         This dataset is prepared for the first layer of training
@@ -38,13 +58,20 @@ class Image2HeightmapDataset(Dataset):
     """
 
     def __init__(self, image_src_folder_path, heightmap_src_folder_path, transform=None):
+        """
+
+        :param image_src_folder_path: the folder for images
+        :param heightmap_src_folder_path: the folder for **normalized** heightmap
+        :param transform: transforms applied to the images
+        """
+
         self.image_src_folder_path = image_src_folder_path
         self.heightmap_src_folder_path = heightmap_src_folder_path
         self.transform = transform
         self.image_extension = ['.png', '.PNG', '.jpg', '.JPG']
-        image_heightmap_link = []
-        for dirname in os.listdir(image_src_folder_path):
-            for filename in os.listdir(os.path.join(image_src_folder_path, dirname)):
+        self.image_heightmap_link = []
+        for dirname in os.listdir(self.image_src_folder_path):
+            for filename in os.listdir(os.path.join(self.image_src_folder_path, dirname)):
                 if any(filename.endswith(extension) for extension in self.image_extension):
                     terrainID, position, direction = get_info(filename)
                     # if the terrainID_position_direction_mat_normalized.npy exists
@@ -52,20 +79,24 @@ class Image2HeightmapDataset(Dataset):
                                                    "{}_{}_{}_mat_normalized.npy".format(terrainID, position,
                                                                                         direction))):
                         # if existed, append to the list of link
-                        image_heightmap_link.append(
+                        self.image_heightmap_link.append(
                             {
-                                "img_path": os.path.abspath(
-                                    os.path.join(self.image_src_folder_path, dirname, filename)),
-                                "mat_path": os.path.abspath(os.path.join(self.heightmap_src_folder_path,
-                                                                         "{}_{}_{}_mat_normalized.npy".format(terrainID,
-                                                                                                              position,
-                                                                                                              direction)))
+                                "img_path": os.path.abspath(os.path.join(
+                                    self.image_src_folder_path,
+                                    dirname,
+                                    filename
+                                )),
+                                "mat_path": os.path.abspath(os.path.join(
+                                    self.heightmap_src_folder_path,
+                                    "{}_{}_{}_mat_normalized.npy".format(terrainID,
+                                                                         position,
+                                                                         direction)
+                                ))
                             }
                         )
                     else:
                         print("[ERROR] " + os.path.join(self.heightmap_src_folder_path, "{}_{}_{}_mat_normalized.npy"
                                                         .format(terrainID, position, direction)) + " does not exist")
-        self.image_heightmap_link = image_heightmap_link
 
     def __len__(self):
         """
@@ -77,7 +108,7 @@ class Image2HeightmapDataset(Dataset):
 
     def __getitem__(self, index):
         """
-            This function returns an image and its corresponding power group from a list of images, with an
+            This function returns an image and its corresponding normalized heightmap from a list of images, with an
             optional transformation (see transforms tutorial: https://pytorch.org/tutorials/beginner/basics/transforms_tutorial.html)
             applied to the image.
 
@@ -85,12 +116,86 @@ class Image2HeightmapDataset(Dataset):
             dataset. In this case, it is used to retrieve the filepath and power_group of the image at the
             specified index
 
-            :return: A tuple containing the transformed image and the power group associated with the image
+            :return: A dict containing the transformed image and the normalized heightmap indicating the image
             at the given index.
         """
-        image_path, heightmap_path = self.image_heightmap_link[index]['img_path'], self.image_heightmap_link[index]['mat_path']
+        image_path, heightmap_path = self.image_heightmap_link[index]['img_path'], self.image_heightmap_link[index][
+            'mat_path']
         img = Image.open(image_path).convert('RGB')
         heightmap = np.load(heightmap_path)
         if self.transform is not None:
             img = self.transform(img)
         return img, heightmap
+
+
+class Heightmap2PowerclassDataset(Dataset):
+    """
+            This dataset is prepared for the second layer of training
+            to train the relationship between an inferred normalized heightmap
+            and the power classification
+
+            The power classification is done during the preprocessing
+            The classification is based on the distribution (histogram)
+            of average power recorded
+
+            A heightmap means the relative height between the current position
+            and height of the position mapped to each pixel of the image
+            The heightmap has already been normalized before the training
+            See: Preprocessing/Normalization.py
+        """
+
+    def __init__(self, heightmap_src_folder_path, classification_datafile_src_path):
+        """
+
+        :param heightmap_src_folder_path: the **normalized** heightmap folder, by default,
+        it is located at the Dataset/PowerCollection/label_heightmap_normalized
+        :param classification_datafile_src_path: the power classification csv file
+        """
+
+        self.heightmap_src_folder_path = heightmap_src_folder_path
+        self.classification_datafile_src_path = classification_datafile_src_path
+        self.heightmap_extension = ['.npy']
+        self.heightmap_classification_link = []
+        self.pwdf = pd.read_csv(self.classification_datafile_src_path, dtype={'terrainID': str})
+        for dirname in os.listdir(self.heightmap_src_folder_path):
+            for filename in os.listdir(os.path.join(heightmap_src_folder_path, dirname)):
+                if any(filename.endswith(extension) for extension in self.heightmap_extension):
+                    terrainID, position, direction = get_info(filename)
+                    power_grp = query_power(self.pwdf, terrainID, position, direction)
+                    if power_grp is None:
+                        print("[ERROR] The power group for [terrainID: {}, position: {}, direction: {}] does not exist")
+                    self.heightmap_classification_link.append(
+                        {
+                            "heightmap_path": os.path.abspath(os.path.join(
+                                self.heightmap_src_folder_path,
+                                dirname,
+                                filename
+                            )),
+                            "power_group": power_grp
+                        }
+                    )
+
+    def __len__(self):
+        """
+            This function returns the number of the images in the dataset
+
+            :return: The length of the "images" attribute of the object.
+        """
+        return len(self.heightmap_classification_link)
+
+    def __getitem__(self, index):
+        """
+            This function returns a normalized and its corresponding power group
+
+            :param index: The index parameter is the index of the item that needs to be retrieved from the
+            dataset. In this case, it is used to retrieve the filepath and power_group of the image at the
+            specified index
+
+            :return: A dict containing the normalized heightmap and the power group associated with the
+            heightmap at the given index.
+        """
+        heightmap_path, power_grp = self.heightmap_classification_link[index]['heightmap_path'], self.heightmap_classification_link[index]['power_group']
+        heightmap = np.load(heightmap_path)
+        return heightmap, power_grp
+
+
