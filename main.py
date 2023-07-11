@@ -40,14 +40,31 @@ if __name__ == '__main__':
     the image collected and
     its correponding heightmap
     """
-    predictor = Predictor.EnergyPredictorV2_image2heightmap(
+    # predictor1 = Predictor.EnergyPredictorV2_image2heightmap(
+    #     train_src_folder_path='Train',
+    #     test_src_folder_path='Test',
+    #     heightmap_src_folder_path='Dataset/PowerCollection/Label_heightmap_normalized',
+    #     checkpoint_folder_path='Checkpoint',
+    #     train_batch_size=4,
+    #     test_batch_size=4,
+    #     num_epochs=500,
+    #     device = 'cuda:1'
+    # )
+    # predictor1.start()
+    """
+    STEP5: train the model using
+    the heightmap collected and
+    its correponding power classification
+    """
+    predictor2 = Predictor.EnergyPredictorV2_heightmap2powerclass(
         train_src_folder_path='Train',
         test_src_folder_path='Test',
         heightmap_src_folder_path='Dataset/PowerCollection/Label_heightmap_normalized',
+        classification_datafile_src_path='Dataset/data_after_preprocessed.csv',
         checkpoint_folder_path='Checkpoint',
-        train_batch_size=4,
-        test_batch_size=4,
-        num_epochs=500,
-        device = 'cuda:1'
+        train_batch_size=16,
+        test_batch_size=16,
+        num_epochs=100,
+        num_classes=5,
     )
-    predictor.start()
+    predictor2.start()

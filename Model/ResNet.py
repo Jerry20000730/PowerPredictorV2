@@ -125,7 +125,7 @@ def resnet18(num_classes):
     :return: A ResNet model with 18 layers and BasicBlock as the
     building block, which takes in 3-channel images and outputs predictions for `num_classes` classes.
     """
-    model = ResNet(img_channels=3, num_layers=18, block=BasicBlock, num_classes=num_classes)
+    model = ResNet(img_channels=1, num_layers=18, block=BasicBlock, num_classes=num_classes)
     return model
 
 
@@ -138,5 +138,5 @@ def resnet34(num_classes):
     :return: A ResNet model with 34 layers and a specified number of
     output classes.
     """
-    model = ResNet(img_channels=3, num_layers=34, block=BasicBlock, num_classes=num_classes)
+    model = ResNet(img_channels=1, num_layers=34, block=BasicBlock, num_classes=num_classes)
     return model

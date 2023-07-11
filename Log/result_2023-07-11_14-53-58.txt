@@ -1,0 +1,971 @@
+Training...
+
+[INFO] Epoch 1/100 average training loss: 0.10320794582366943, accuracy: 2179/10000 (22%)
+
+Testing...
+
+[INFO] average testing loss decreased (inf --> 0.100621).  Saving model ...
+
+
+[INFO] Create folder for storing current Checkpoint: Checkpoint\PredictorV2_heightmap2powerclass_2023-07-11_14-53-58
+
+[INFO] Epoch 1/100 average testing loss: 0.1006, accuracy: 556/2352 (24%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 2/100 average training loss: 0.1011410728096962, accuracy: 2215/10000 (22%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.100621 --> 0.100345).  Saving model ...
+
+
+[INFO] Epoch 2/100 average testing loss: 0.1003, accuracy: 534/2352 (23%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 3/100 average training loss: 0.10070224106311798, accuracy: 2220/10000 (22%)
+
+Testing...
+
+[INFO] Epoch 3/100 average testing loss: 0.1027, accuracy: 515/2352 (22%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 4/100 average training loss: 0.10049334913492203, accuracy: 2336/10000 (23%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.100345 --> 0.099761).  Saving model ...
+
+
+[INFO] Epoch 4/100 average testing loss: 0.0998, accuracy: 563/2352 (24%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 5/100 average training loss: 0.10032593458890915, accuracy: 2382/10000 (24%)
+
+Testing...
+
+[INFO] Epoch 5/100 average testing loss: 0.1012, accuracy: 575/2352 (24%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 6/100 average training loss: 0.10023663192987442, accuracy: 2310/10000 (23%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.099761 --> 0.099183).  Saving model ...
+
+
+[INFO] Epoch 6/100 average testing loss: 0.0992, accuracy: 578/2352 (25%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 7/100 average training loss: 0.09987162053585052, accuracy: 2337/10000 (23%)
+
+Testing...
+
+[INFO] Epoch 7/100 average testing loss: 0.1009, accuracy: 493/2352 (21%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 8/100 average training loss: 0.09973231703042984, accuracy: 2447/10000 (24%)
+
+Testing...
+
+[INFO] Epoch 8/100 average testing loss: 0.1001, accuracy: 618/2352 (26%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 9/100 average training loss: 0.0986686572432518, accuracy: 2532/10000 (25%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.099183 --> 0.098203).  Saving model ...
+
+
+[INFO] Epoch 9/100 average testing loss: 0.0982, accuracy: 629/2352 (27%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 10/100 average training loss: 0.09755636751651764, accuracy: 2693/10000 (27%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.098203 --> 0.097228).  Saving model ...
+
+
+[INFO] Epoch 10/100 average testing loss: 0.0972, accuracy: 656/2352 (28%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 11/100 average training loss: 0.09595641493797302, accuracy: 2861/10000 (29%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.097228 --> 0.097183).  Saving model ...
+
+
+[INFO] Epoch 11/100 average testing loss: 0.0972, accuracy: 642/2352 (27%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 12/100 average training loss: 0.09443236142396927, accuracy: 3011/10000 (30%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.097183 --> 0.094661).  Saving model ...
+
+
+[INFO] Epoch 12/100 average testing loss: 0.0947, accuracy: 730/2352 (31%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 13/100 average training loss: 0.09328643232584, accuracy: 3106/10000 (31%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.094661 --> 0.092249).  Saving model ...
+
+
+[INFO] Epoch 13/100 average testing loss: 0.0922, accuracy: 753/2352 (32%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 14/100 average training loss: 0.09256850928068161, accuracy: 3190/10000 (32%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.092249 --> 0.092048).  Saving model ...
+
+
+[INFO] Epoch 14/100 average testing loss: 0.0920, accuracy: 779/2352 (33%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 15/100 average training loss: 0.09149068593978882, accuracy: 3338/10000 (33%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.092048 --> 0.091165).  Saving model ...
+
+
+[INFO] Epoch 15/100 average testing loss: 0.0912, accuracy: 786/2352 (33%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 16/100 average training loss: 0.09156034141778946, accuracy: 3271/10000 (33%)
+
+Testing...
+
+[INFO] Epoch 16/100 average testing loss: 0.0926, accuracy: 773/2352 (33%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 17/100 average training loss: 0.0909113958477974, accuracy: 3347/10000 (33%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.091165 --> 0.090955).  Saving model ...
+
+
+[INFO] Epoch 17/100 average testing loss: 0.0910, accuracy: 761/2352 (32%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 18/100 average training loss: 0.09099843353033066, accuracy: 3291/10000 (33%)
+
+Testing...
+
+[INFO] Epoch 18/100 average testing loss: 0.0919, accuracy: 770/2352 (33%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 19/100 average training loss: 0.09104863554239273, accuracy: 3241/10000 (32%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.090955 --> 0.090630).  Saving model ...
+
+
+[INFO] Epoch 19/100 average testing loss: 0.0906, accuracy: 832/2352 (35%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 20/100 average training loss: 0.09049668908119202, accuracy: 3350/10000 (34%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.090630 --> 0.089964).  Saving model ...
+
+
+[INFO] Epoch 20/100 average testing loss: 0.0900, accuracy: 830/2352 (35%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 21/100 average training loss: 0.09049036353826523, accuracy: 3367/10000 (34%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.089964 --> 0.089907).  Saving model ...
+
+
+[INFO] Epoch 21/100 average testing loss: 0.0899, accuracy: 841/2352 (36%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 22/100 average training loss: 0.09004834294319153, accuracy: 3353/10000 (34%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.089907 --> 0.089823).  Saving model ...
+
+
+[INFO] Epoch 22/100 average testing loss: 0.0898, accuracy: 811/2352 (34%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 23/100 average training loss: 0.08954698592424393, accuracy: 3425/10000 (34%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.089823 --> 0.088782).  Saving model ...
+
+
+[INFO] Epoch 23/100 average testing loss: 0.0888, accuracy: 848/2352 (36%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 24/100 average training loss: 0.08920042216777802, accuracy: 3442/10000 (34%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.088782 --> 0.088478).  Saving model ...
+
+
+[INFO] Epoch 24/100 average testing loss: 0.0885, accuracy: 852/2352 (36%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 25/100 average training loss: 0.0890958234667778, accuracy: 3463/10000 (35%)
+
+Testing...
+
+[INFO] Epoch 25/100 average testing loss: 0.0896, accuracy: 842/2352 (36%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 26/100 average training loss: 0.0883636474609375, accuracy: 3564/10000 (36%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.088478 --> 0.088051).  Saving model ...
+
+
+[INFO] Epoch 26/100 average testing loss: 0.0881, accuracy: 859/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 27/100 average training loss: 0.08765893429517746, accuracy: 3631/10000 (36%)
+
+Testing...
+
+[INFO] Epoch 27/100 average testing loss: 0.0886, accuracy: 844/2352 (36%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 28/100 average training loss: 0.08760730177164078, accuracy: 3609/10000 (36%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.088051 --> 0.087430).  Saving model ...
+
+
+[INFO] Epoch 28/100 average testing loss: 0.0874, accuracy: 873/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 29/100 average training loss: 0.08687791228294373, accuracy: 3676/10000 (37%)
+
+Testing...
+
+[INFO] Epoch 29/100 average testing loss: 0.0878, accuracy: 872/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 30/100 average training loss: 0.08558721840381622, accuracy: 3794/10000 (38%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.087430 --> 0.086222).  Saving model ...
+
+
+[INFO] Epoch 30/100 average testing loss: 0.0862, accuracy: 897/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 31/100 average training loss: 0.08562219142913818, accuracy: 3735/10000 (37%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.086222 --> 0.086058).  Saving model ...
+
+
+[INFO] Epoch 31/100 average testing loss: 0.0861, accuracy: 891/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 32/100 average training loss: 0.08451265096664429, accuracy: 3959/10000 (40%)
+
+Testing...
+
+[INFO] Epoch 32/100 average testing loss: 0.0868, accuracy: 906/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 33/100 average training loss: 0.08360043168067932, accuracy: 4033/10000 (40%)
+
+Testing...
+
+[INFO] average testing loss decreased (0.086058 --> 0.084436).  Saving model ...
+
+
+[INFO] Epoch 33/100 average testing loss: 0.0844, accuracy: 935/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 34/100 average training loss: 0.08228965103626251, accuracy: 4129/10000 (41%)
+
+Testing...
+
+[INFO] Epoch 34/100 average testing loss: 0.0858, accuracy: 927/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 35/100 average training loss: 0.0808810442686081, accuracy: 4295/10000 (43%)
+
+Testing...
+
+[INFO] Epoch 35/100 average testing loss: 0.0853, accuracy: 886/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 36/100 average training loss: 0.0793444812297821, accuracy: 4357/10000 (44%)
+
+Testing...
+
+[INFO] Epoch 36/100 average testing loss: 0.0874, accuracy: 926/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 37/100 average training loss: 0.07772576063871384, accuracy: 4587/10000 (46%)
+
+Testing...
+
+[INFO] Epoch 37/100 average testing loss: 0.0847, accuracy: 964/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 38/100 average training loss: 0.0752699226140976, accuracy: 4749/10000 (47%)
+
+Testing...
+
+[INFO] Epoch 38/100 average testing loss: 0.0879, accuracy: 956/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 39/100 average training loss: 0.07322771102190018, accuracy: 4912/10000 (49%)
+
+Testing...
+
+[INFO] Epoch 39/100 average testing loss: 0.0864, accuracy: 946/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 40/100 average training loss: 0.07009106874465942, accuracy: 5243/10000 (52%)
+
+Testing...
+
+[INFO] Epoch 40/100 average testing loss: 0.0864, accuracy: 919/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 41/100 average training loss: 0.06612326204776764, accuracy: 5598/10000 (56%)
+
+Testing...
+
+[INFO] Epoch 41/100 average testing loss: 0.0902, accuracy: 968/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 42/100 average training loss: 0.061530839651823044, accuracy: 5938/10000 (59%)
+
+Testing...
+
+[INFO] Epoch 42/100 average testing loss: 0.0906, accuracy: 953/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 43/100 average training loss: 0.05725926533341408, accuracy: 6273/10000 (63%)
+
+Testing...
+
+[INFO] Epoch 43/100 average testing loss: 0.0937, accuracy: 957/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 44/100 average training loss: 0.05262068286538124, accuracy: 6599/10000 (66%)
+
+Testing...
+
+[INFO] Epoch 44/100 average testing loss: 0.0981, accuracy: 949/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 45/100 average training loss: 0.04713210463523865, accuracy: 6999/10000 (70%)
+
+Testing...
+
+[INFO] Epoch 45/100 average testing loss: 0.1097, accuracy: 910/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 46/100 average training loss: 0.04163848236203194, accuracy: 7450/10000 (74%)
+
+Testing...
+
+[INFO] Epoch 46/100 average testing loss: 0.1120, accuracy: 956/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 47/100 average training loss: 0.036284931004047394, accuracy: 7797/10000 (78%)
+
+Testing...
+
+[INFO] Epoch 47/100 average testing loss: 0.1248, accuracy: 917/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 48/100 average training loss: 0.0320245735347271, accuracy: 8052/10000 (81%)
+
+Testing...
+
+[INFO] Epoch 48/100 average testing loss: 0.1212, accuracy: 977/2352 (42%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 49/100 average training loss: 0.028703857213258743, accuracy: 8282/10000 (83%)
+
+Testing...
+
+[INFO] Epoch 49/100 average testing loss: 0.1353, accuracy: 933/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 50/100 average training loss: 0.025778889656066895, accuracy: 8503/10000 (85%)
+
+Testing...
+
+[INFO] Epoch 50/100 average testing loss: 0.1403, accuracy: 890/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 51/100 average training loss: 0.02377808839082718, accuracy: 8634/10000 (86%)
+
+Testing...
+
+[INFO] Epoch 51/100 average testing loss: 0.1587, accuracy: 934/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 52/100 average training loss: 0.020965365692973137, accuracy: 8783/10000 (88%)
+
+Testing...
+
+[INFO] Epoch 52/100 average testing loss: 0.1533, accuracy: 959/2352 (41%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 53/100 average training loss: 0.017841007560491562, accuracy: 8970/10000 (90%)
+
+Testing...
+
+[INFO] Epoch 53/100 average testing loss: 0.1627, accuracy: 910/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 54/100 average training loss: 0.017539475113153458, accuracy: 9014/10000 (90%)
+
+Testing...
+
+[INFO] Epoch 54/100 average testing loss: 0.1685, accuracy: 914/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 55/100 average training loss: 0.014898449182510376, accuracy: 9135/10000 (91%)
+
+Testing...
+
+[INFO] Epoch 55/100 average testing loss: 0.1795, accuracy: 882/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 56/100 average training loss: 0.014232740737497807, accuracy: 9184/10000 (92%)
+
+Testing...
+
+[INFO] Epoch 56/100 average testing loss: 0.1783, accuracy: 929/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 57/100 average training loss: 0.013399875722825527, accuracy: 9255/10000 (93%)
+
+Testing...
+
+[INFO] Epoch 57/100 average testing loss: 0.1702, accuracy: 937/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 58/100 average training loss: 0.012060131877660751, accuracy: 9315/10000 (93%)
+
+Testing...
+
+[INFO] Epoch 58/100 average testing loss: 0.1999, accuracy: 883/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 59/100 average training loss: 0.010545685887336731, accuracy: 9416/10000 (94%)
+
+Testing...
+
+[INFO] Epoch 59/100 average testing loss: 0.1869, accuracy: 890/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 60/100 average training loss: 0.010495811700820923, accuracy: 9405/10000 (94%)
+
+Testing...
+
+[INFO] Epoch 60/100 average testing loss: 0.2048, accuracy: 882/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 61/100 average training loss: 0.009897075593471527, accuracy: 9474/10000 (95%)
+
+Testing...
+
+[INFO] Epoch 61/100 average testing loss: 0.1959, accuracy: 917/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 62/100 average training loss: 0.009844875894486904, accuracy: 9479/10000 (95%)
+
+Testing...
+
+[INFO] Epoch 62/100 average testing loss: 0.1830, accuracy: 913/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 63/100 average training loss: 0.00838408898562193, accuracy: 9551/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 63/100 average testing loss: 0.1827, accuracy: 921/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 64/100 average training loss: 0.008050033822655678, accuracy: 9570/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 64/100 average testing loss: 0.1972, accuracy: 903/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 65/100 average training loss: 0.008149497210979462, accuracy: 9552/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 65/100 average testing loss: 0.1913, accuracy: 889/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 66/100 average training loss: 0.007119272369891405, accuracy: 9598/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 66/100 average testing loss: 0.1932, accuracy: 920/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 67/100 average training loss: 0.0073030865751206875, accuracy: 9620/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 67/100 average testing loss: 0.2182, accuracy: 933/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 68/100 average training loss: 0.008031307719647884, accuracy: 9559/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 68/100 average testing loss: 0.1904, accuracy: 876/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 69/100 average training loss: 0.006738990545272827, accuracy: 9636/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 69/100 average testing loss: 0.2136, accuracy: 899/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 70/100 average training loss: 0.006995819043368101, accuracy: 9603/10000 (96%)
+
+Testing...
+
+[INFO] Epoch 70/100 average testing loss: 0.2029, accuracy: 927/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 71/100 average training loss: 0.006309514865279198, accuracy: 9661/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 71/100 average testing loss: 0.1983, accuracy: 886/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 72/100 average training loss: 0.005657401401549578, accuracy: 9691/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 72/100 average testing loss: 0.2167, accuracy: 900/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 73/100 average training loss: 0.005404493305832148, accuracy: 9720/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 73/100 average testing loss: 0.2248, accuracy: 928/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 74/100 average training loss: 0.005482554901391268, accuracy: 9704/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 74/100 average testing loss: 0.2363, accuracy: 868/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 75/100 average training loss: 0.005450299475342035, accuracy: 9700/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 75/100 average testing loss: 0.2151, accuracy: 937/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 76/100 average training loss: 0.005456451326608658, accuracy: 9691/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 76/100 average testing loss: 0.2093, accuracy: 909/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 77/100 average training loss: 0.004594967234879732, accuracy: 9747/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 77/100 average testing loss: 0.2154, accuracy: 900/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 78/100 average training loss: 0.005168432369828224, accuracy: 9719/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 78/100 average testing loss: 0.2194, accuracy: 915/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 79/100 average training loss: 0.005347539205104113, accuracy: 9716/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 79/100 average testing loss: 0.2046, accuracy: 919/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 80/100 average training loss: 0.004524214658886194, accuracy: 9780/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 80/100 average testing loss: 0.2283, accuracy: 925/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 81/100 average training loss: 0.004775476176291704, accuracy: 9748/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 81/100 average testing loss: 0.2225, accuracy: 880/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 82/100 average training loss: 0.004504016600549221, accuracy: 9764/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 82/100 average testing loss: 0.2303, accuracy: 918/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 83/100 average training loss: 0.0045968033373355865, accuracy: 9730/10000 (97%)
+
+Testing...
+
+[INFO] Epoch 83/100 average testing loss: 0.2263, accuracy: 894/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 84/100 average training loss: 0.004143489990383387, accuracy: 9789/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 84/100 average testing loss: 0.2089, accuracy: 880/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 85/100 average training loss: 0.003576108952984214, accuracy: 9816/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 85/100 average testing loss: 0.2270, accuracy: 905/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 86/100 average training loss: 0.004030536860227585, accuracy: 9755/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 86/100 average testing loss: 0.2166, accuracy: 926/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 87/100 average training loss: 0.0035923037212342024, accuracy: 9807/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 87/100 average testing loss: 0.2401, accuracy: 921/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 88/100 average training loss: 0.003320949152112007, accuracy: 9832/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 88/100 average testing loss: 0.2234, accuracy: 905/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 89/100 average training loss: 0.004288157448172569, accuracy: 9771/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 89/100 average testing loss: 0.2282, accuracy: 883/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 90/100 average training loss: 0.0031380741856992245, accuracy: 9833/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 90/100 average testing loss: 0.2414, accuracy: 894/2352 (38%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 91/100 average training loss: 0.0032549556344747543, accuracy: 9836/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 91/100 average testing loss: 0.2429, accuracy: 931/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 92/100 average training loss: 0.00393855944275856, accuracy: 9801/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 92/100 average testing loss: 0.2313, accuracy: 944/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 93/100 average training loss: 0.003114310558885336, accuracy: 9842/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 93/100 average testing loss: 0.2389, accuracy: 927/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 94/100 average training loss: 0.0037595443427562714, accuracy: 9793/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 94/100 average testing loss: 0.2172, accuracy: 912/2352 (39%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 95/100 average training loss: 0.003020161297172308, accuracy: 9846/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 95/100 average testing loss: 0.2588, accuracy: 936/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 96/100 average training loss: 0.0036208925303071737, accuracy: 9805/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 96/100 average testing loss: 0.2368, accuracy: 872/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 97/100 average training loss: 0.00306427082978189, accuracy: 9835/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 97/100 average testing loss: 0.2381, accuracy: 876/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 98/100 average training loss: 0.0030574335251003504, accuracy: 9839/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 98/100 average testing loss: 0.2146, accuracy: 941/2352 (40%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 99/100 average training loss: 0.0028218980878591537, accuracy: 9843/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 99/100 average testing loss: 0.2431, accuracy: 876/2352 (37%)
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 100/100 average training loss: 0.003005708334967494, accuracy: 9843/10000 (98%)
+
+Testing...
+
+[INFO] Epoch 100/100 average testing loss: 0.2387, accuracy: 905/2352 (38%)
+
+--------------------------------------------------------------
