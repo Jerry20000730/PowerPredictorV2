@@ -1,0 +1,1671 @@
+Training...
+
+[INFO] Epoch 1/200 average training loss: 827.7236938476562
+Testing...
+
+[INFO] average testing loss decreased (inf --> 827.832786).  Saving model ...
+
+
+[INFO] Create folder for storing current Checkpoint: Checkpoint/PredictorV2_image2heightmap_2023-07-12_15-32-01
+
+[INFO] Epoch 1/200 average testing loss: 827.8328
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 2/200 average training loss: 817.3841552734375
+Testing...
+
+[INFO] average testing loss decreased (827.832786 --> 827.382106).  Saving model ...
+
+
+[INFO] Epoch 2/200 average testing loss: 827.3821
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 3/200 average training loss: 815.9439086914062
+Testing...
+
+[INFO] average testing loss decreased (827.382106 --> 818.219878).  Saving model ...
+
+
+[INFO] Epoch 3/200 average testing loss: 818.2199
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 4/200 average training loss: 812.2922973632812
+Testing...
+
+[INFO] average testing loss decreased (818.219878 --> 811.338615).  Saving model ...
+
+
+[INFO] Epoch 4/200 average testing loss: 811.3386
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 5/200 average training loss: 810.3489379882812
+Testing...
+
+[INFO] Epoch 5/200 average testing loss: 813.6679
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 6/200 average training loss: 805.6663208007812
+Testing...
+
+[INFO] average testing loss decreased (811.338615 --> 809.625624).  Saving model ...
+
+
+[INFO] Epoch 6/200 average testing loss: 809.6256
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 7/200 average training loss: 800.1847534179688
+Testing...
+
+[INFO] average testing loss decreased (809.625624 --> 796.404784).  Saving model ...
+
+
+[INFO] Epoch 7/200 average testing loss: 796.4048
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 8/200 average training loss: 797.104736328125
+Testing...
+
+[INFO] Epoch 8/200 average testing loss: 815.6288
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 9/200 average training loss: 790.795654296875
+Testing...
+
+[INFO] average testing loss decreased (796.404784 --> 796.395656).  Saving model ...
+
+
+[INFO] Epoch 9/200 average testing loss: 796.3957
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 10/200 average training loss: 788.6155395507812
+Testing...
+
+[INFO] average testing loss decreased (796.395656 --> 782.716854).  Saving model ...
+
+
+[INFO] Epoch 10/200 average testing loss: 782.7169
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 11/200 average training loss: 781.8898315429688
+Testing...
+
+[INFO] average testing loss decreased (782.716854 --> 776.944516).  Saving model ...
+
+
+[INFO] Epoch 11/200 average testing loss: 776.9445
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 12/200 average training loss: 769.1546020507812
+Testing...
+
+[INFO] average testing loss decreased (776.944516 --> 744.464773).  Saving model ...
+
+
+[INFO] Epoch 12/200 average testing loss: 744.4648
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 13/200 average training loss: 741.2616577148438
+Testing...
+
+[INFO] Epoch 13/200 average testing loss: 755.7273
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 14/200 average training loss: 718.7136840820312
+Testing...
+
+[INFO] average testing loss decreased (744.464773 --> 743.307754).  Saving model ...
+
+
+[INFO] Epoch 14/200 average testing loss: 743.3078
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 15/200 average training loss: 713.3787231445312
+Testing...
+
+[INFO] average testing loss decreased (743.307754 --> 696.023657).  Saving model ...
+
+
+[INFO] Epoch 15/200 average testing loss: 696.0237
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 16/200 average training loss: 686.8270874023438
+Testing...
+
+[INFO] average testing loss decreased (696.023657 --> 692.882661).  Saving model ...
+
+
+[INFO] Epoch 16/200 average testing loss: 692.8827
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 17/200 average training loss: 667.2911376953125
+Testing...
+
+[INFO] average testing loss decreased (692.882661 --> 654.115563).  Saving model ...
+
+
+[INFO] Epoch 17/200 average testing loss: 654.1156
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 18/200 average training loss: 648.5591430664062
+Testing...
+
+[INFO] average testing loss decreased (654.115563 --> 653.995280).  Saving model ...
+
+
+[INFO] Epoch 18/200 average testing loss: 653.9953
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 19/200 average training loss: 621.4501342773438
+Testing...
+
+[INFO] average testing loss decreased (653.995280 --> 604.659340).  Saving model ...
+
+
+[INFO] Epoch 19/200 average testing loss: 604.6593
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 20/200 average training loss: 600.861083984375
+Testing...
+
+[INFO] average testing loss decreased (604.659340 --> 581.308210).  Saving model ...
+
+
+[INFO] Epoch 20/200 average testing loss: 581.3082
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 21/200 average training loss: 590.022705078125
+Testing...
+
+[INFO] Epoch 21/200 average testing loss: 583.8618
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 22/200 average training loss: 569.4107055664062
+Testing...
+
+[INFO] average testing loss decreased (581.308210 --> 559.741998).  Saving model ...
+
+
+[INFO] Epoch 22/200 average testing loss: 559.7420
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 23/200 average training loss: 552.7614135742188
+Testing...
+
+[INFO] Epoch 23/200 average testing loss: 563.2705
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 24/200 average training loss: 528.4119262695312
+Testing...
+
+[INFO] Epoch 24/200 average testing loss: 586.5765
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 25/200 average training loss: 511.4643249511719
+Testing...
+
+[INFO] average testing loss decreased (559.741998 --> 555.453791).  Saving model ...
+
+
+[INFO] Epoch 25/200 average testing loss: 555.4538
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 26/200 average training loss: 488.4519958496094
+Testing...
+
+[INFO] Epoch 26/200 average testing loss: 593.9213
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 27/200 average training loss: 466.7799987792969
+Testing...
+
+[INFO] average testing loss decreased (555.453791 --> 541.207313).  Saving model ...
+
+
+[INFO] Epoch 27/200 average testing loss: 541.2073
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 28/200 average training loss: 440.4844970703125
+Testing...
+
+[INFO] Epoch 28/200 average testing loss: 548.9284
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 29/200 average training loss: 419.462646484375
+Testing...
+
+[INFO] average testing loss decreased (541.207313 --> 514.061311).  Saving model ...
+
+
+[INFO] Epoch 29/200 average testing loss: 514.0613
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 30/200 average training loss: 391.89959716796875
+Testing...
+
+[INFO] Epoch 30/200 average testing loss: 550.3437
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 31/200 average training loss: 368.6426696777344
+Testing...
+
+[INFO] Epoch 31/200 average testing loss: 537.4456
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 32/200 average training loss: 344.1585693359375
+Testing...
+
+[INFO] Epoch 32/200 average testing loss: 555.7018
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 33/200 average training loss: 322.7411804199219
+Testing...
+
+[INFO] Epoch 33/200 average testing loss: 556.9335
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 34/200 average training loss: 296.7193603515625
+Testing...
+
+[INFO] Epoch 34/200 average testing loss: 552.2236
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 35/200 average training loss: 277.1571044921875
+Testing...
+
+[INFO] Epoch 35/200 average testing loss: 557.1532
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 36/200 average training loss: 257.2191467285156
+Testing...
+
+[INFO] Epoch 36/200 average testing loss: 529.9226
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 37/200 average training loss: 232.3308868408203
+Testing...
+
+[INFO] Epoch 37/200 average testing loss: 532.8989
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 38/200 average training loss: 216.3001251220703
+Testing...
+
+[INFO] Epoch 38/200 average testing loss: 542.7928
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 39/200 average training loss: 203.13084411621094
+Testing...
+
+[INFO] Epoch 39/200 average testing loss: 546.7746
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 40/200 average training loss: 188.59432983398438
+Testing...
+
+[INFO] Epoch 40/200 average testing loss: 550.4380
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 41/200 average training loss: 173.7227020263672
+Testing...
+
+[INFO] Epoch 41/200 average testing loss: 550.5251
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 42/200 average training loss: 163.00668334960938
+Testing...
+
+[INFO] Epoch 42/200 average testing loss: 529.0759
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 43/200 average training loss: 152.29843139648438
+Testing...
+
+[INFO] Epoch 43/200 average testing loss: 542.4323
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 44/200 average training loss: 144.47129821777344
+Testing...
+
+[INFO] Epoch 44/200 average testing loss: 535.8838
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 45/200 average training loss: 135.67623901367188
+Testing...
+
+[INFO] Epoch 45/200 average testing loss: 542.1564
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 46/200 average training loss: 130.19125366210938
+Testing...
+
+[INFO] Epoch 46/200 average testing loss: 542.8849
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 47/200 average training loss: 124.24703216552734
+Testing...
+
+[INFO] Epoch 47/200 average testing loss: 543.3951
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 48/200 average training loss: 117.30399322509766
+Testing...
+
+[INFO] Epoch 48/200 average testing loss: 526.0382
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 49/200 average training loss: 104.21315002441406
+Testing...
+
+[INFO] Epoch 49/200 average testing loss: 546.4085
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 50/200 average training loss: 100.83975219726562
+Testing...
+
+[INFO] Epoch 50/200 average testing loss: 530.0470
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 51/200 average training loss: 93.38136291503906
+Testing...
+
+[INFO] Epoch 51/200 average testing loss: 546.3936
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 52/200 average training loss: 94.04431915283203
+Testing...
+
+[INFO] Epoch 52/200 average testing loss: 533.8161
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 53/200 average training loss: 88.13072967529297
+Testing...
+
+[INFO] Epoch 53/200 average testing loss: 537.8559
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 54/200 average training loss: 83.71514892578125
+Testing...
+
+[INFO] Epoch 54/200 average testing loss: 559.7233
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 55/200 average training loss: 80.11532592773438
+Testing...
+
+[INFO] Epoch 55/200 average testing loss: 533.3386
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 56/200 average training loss: 76.39906311035156
+Testing...
+
+[INFO] Epoch 56/200 average testing loss: 539.2419
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 57/200 average training loss: 74.07197570800781
+Testing...
+
+[INFO] Epoch 57/200 average testing loss: 535.2007
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 58/200 average training loss: 70.10215759277344
+Testing...
+
+[INFO] Epoch 58/200 average testing loss: 529.6237
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 59/200 average training loss: 68.21565246582031
+Testing...
+
+[INFO] Epoch 59/200 average testing loss: 539.2324
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 60/200 average training loss: 67.74666595458984
+Testing...
+
+[INFO] Epoch 60/200 average testing loss: 537.8394
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 61/200 average training loss: 62.531524658203125
+Testing...
+
+[INFO] Epoch 61/200 average testing loss: 548.1879
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 62/200 average training loss: 56.484580993652344
+Testing...
+
+[INFO] Epoch 62/200 average testing loss: 531.9043
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 63/200 average training loss: 56.63025665283203
+Testing...
+
+[INFO] Epoch 63/200 average testing loss: 532.6753
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 64/200 average training loss: 52.85307312011719
+Testing...
+
+[INFO] Epoch 64/200 average testing loss: 533.8920
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 65/200 average training loss: 52.644081115722656
+Testing...
+
+[INFO] Epoch 65/200 average testing loss: 526.1842
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 66/200 average training loss: 48.9545783996582
+Testing...
+
+[INFO] Epoch 66/200 average testing loss: 529.9850
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 67/200 average training loss: 46.52062225341797
+Testing...
+
+[INFO] Epoch 67/200 average testing loss: 539.2226
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 68/200 average training loss: 47.03348922729492
+Testing...
+
+[INFO] Epoch 68/200 average testing loss: 520.3530
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 69/200 average training loss: 43.01692581176758
+Testing...
+
+[INFO] Epoch 69/200 average testing loss: 528.7104
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 70/200 average training loss: 43.536888122558594
+Testing...
+
+[INFO] Epoch 70/200 average testing loss: 531.3548
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 71/200 average training loss: 41.36783981323242
+Testing...
+
+[INFO] Epoch 71/200 average testing loss: 520.0243
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 72/200 average training loss: 41.795387268066406
+Testing...
+
+[INFO] Epoch 72/200 average testing loss: 531.4933
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 73/200 average training loss: 39.009490966796875
+Testing...
+
+[INFO] Epoch 73/200 average testing loss: 530.8298
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 74/200 average training loss: 37.61540985107422
+Testing...
+
+[INFO] Epoch 74/200 average testing loss: 526.3090
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 75/200 average training loss: 39.23427963256836
+Testing...
+
+[INFO] Epoch 75/200 average testing loss: 522.1471
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 76/200 average training loss: 35.65283203125
+Testing...
+
+[INFO] Epoch 76/200 average testing loss: 543.4387
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 77/200 average training loss: 35.29990005493164
+Testing...
+
+[INFO] Epoch 77/200 average testing loss: 522.3094
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 78/200 average training loss: 34.09005355834961
+Testing...
+
+[INFO] Epoch 78/200 average testing loss: 520.7447
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 79/200 average training loss: 32.32993698120117
+Testing...
+
+[INFO] Epoch 79/200 average testing loss: 532.4018
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 80/200 average training loss: 32.775047302246094
+Testing...
+
+[INFO] Epoch 80/200 average testing loss: 534.5116
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 81/200 average training loss: 32.078712463378906
+Testing...
+
+[INFO] Epoch 81/200 average testing loss: 532.4413
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 82/200 average training loss: 30.07537078857422
+Testing...
+
+[INFO] Epoch 82/200 average testing loss: 524.4511
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 83/200 average training loss: 29.308002471923828
+Testing...
+
+[INFO] Epoch 83/200 average testing loss: 526.1330
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 84/200 average training loss: 30.02284049987793
+Testing...
+
+[INFO] Epoch 84/200 average testing loss: 532.3866
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 85/200 average training loss: 28.6435489654541
+Testing...
+
+[INFO] Epoch 85/200 average testing loss: 523.0100
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 86/200 average training loss: 27.725387573242188
+Testing...
+
+[INFO] Epoch 86/200 average testing loss: 526.9698
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 87/200 average training loss: 27.417892456054688
+Testing...
+
+[INFO] Epoch 87/200 average testing loss: 526.9365
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 88/200 average training loss: 26.77179527282715
+Testing...
+
+[INFO] Epoch 88/200 average testing loss: 525.0470
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 89/200 average training loss: 27.504362106323242
+Testing...
+
+[INFO] Epoch 89/200 average testing loss: 524.9795
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 90/200 average training loss: 25.200664520263672
+Testing...
+
+[INFO] Epoch 90/200 average testing loss: 529.0954
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 91/200 average training loss: 24.901077270507812
+Testing...
+
+[INFO] Epoch 91/200 average testing loss: 522.3604
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 92/200 average training loss: 24.05411148071289
+Testing...
+
+[INFO] Epoch 92/200 average testing loss: 525.6813
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 93/200 average training loss: 25.909317016601562
+Testing...
+
+[INFO] Epoch 93/200 average testing loss: 523.0775
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 94/200 average training loss: 23.86033058166504
+Testing...
+
+[INFO] Epoch 94/200 average testing loss: 526.2485
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 95/200 average training loss: 22.918222427368164
+Testing...
+
+[INFO] Epoch 95/200 average testing loss: 527.3317
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 96/200 average training loss: 23.19952392578125
+Testing...
+
+[INFO] Epoch 96/200 average testing loss: 522.2398
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 97/200 average training loss: 22.750234603881836
+Testing...
+
+[INFO] Epoch 97/200 average testing loss: 522.1049
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 98/200 average training loss: 26.44112777709961
+Testing...
+
+[INFO] Epoch 98/200 average testing loss: 529.1792
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 99/200 average training loss: 19.858989715576172
+Testing...
+
+[INFO] Epoch 99/200 average testing loss: 544.4308
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 100/200 average training loss: 21.162832260131836
+Testing...
+
+[INFO] Epoch 100/200 average testing loss: 534.4973
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 101/200 average training loss: 21.97882843017578
+Testing...
+
+[INFO] Epoch 101/200 average testing loss: 527.7284
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 102/200 average training loss: 20.855180740356445
+Testing...
+
+[INFO] Epoch 102/200 average testing loss: 518.8034
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 103/200 average training loss: 20.661903381347656
+Testing...
+
+[INFO] Epoch 103/200 average testing loss: 531.9065
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 104/200 average training loss: 20.616748809814453
+Testing...
+
+[INFO] Epoch 104/200 average testing loss: 528.4801
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 105/200 average training loss: 20.367328643798828
+Epoch 00105: reducing learning rate of group 0 to 8.0000e-04.
+Testing...
+
+[INFO] Epoch 105/200 average testing loss: 526.6489
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 106/200 average training loss: 16.064800262451172
+Testing...
+
+[INFO] Epoch 106/200 average testing loss: 526.1670
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 107/200 average training loss: 13.57797908782959
+Testing...
+
+[INFO] Epoch 107/200 average testing loss: 526.0854
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 108/200 average training loss: 14.174399375915527
+Testing...
+
+[INFO] Epoch 108/200 average testing loss: 525.5347
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 109/200 average training loss: 13.730687141418457
+Testing...
+
+[INFO] Epoch 109/200 average testing loss: 525.7246
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 110/200 average training loss: 14.19598388671875
+Testing...
+
+[INFO] Epoch 110/200 average testing loss: 524.2600
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 111/200 average training loss: 13.6499605178833
+Testing...
+
+[INFO] Epoch 111/200 average testing loss: 522.3150
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 112/200 average training loss: 13.091900825500488
+Testing...
+
+[INFO] Epoch 112/200 average testing loss: 525.6884
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 113/200 average training loss: 12.969776153564453
+Testing...
+
+[INFO] Epoch 113/200 average testing loss: 520.4196
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 114/200 average training loss: 12.939303398132324
+Testing...
+
+[INFO] Epoch 114/200 average testing loss: 527.0820
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 115/200 average training loss: 14.50265884399414
+Testing...
+
+[INFO] Epoch 115/200 average testing loss: 523.9896
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 116/200 average training loss: 11.680327415466309
+Testing...
+
+[INFO] Epoch 116/200 average testing loss: 544.5095
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 117/200 average training loss: 12.763120651245117
+Testing...
+
+[INFO] Epoch 117/200 average testing loss: 524.7040
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 118/200 average training loss: 12.453556060791016
+Testing...
+
+[INFO] Epoch 118/200 average testing loss: 521.3969
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 119/200 average training loss: 12.862770080566406
+Testing...
+
+[INFO] Epoch 119/200 average testing loss: 523.6343
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 120/200 average training loss: 13.022109031677246
+Testing...
+
+[INFO] Epoch 120/200 average testing loss: 521.0964
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 121/200 average training loss: 10.700032234191895
+Testing...
+
+[INFO] Epoch 121/200 average testing loss: 525.2386
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 122/200 average training loss: 11.612655639648438
+Testing...
+
+[INFO] Epoch 122/200 average testing loss: 541.3835
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 123/200 average training loss: 11.719645500183105
+Testing...
+
+[INFO] Epoch 123/200 average testing loss: 525.4657
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 124/200 average training loss: 11.63296890258789
+Testing...
+
+[INFO] Epoch 124/200 average testing loss: 526.3375
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 125/200 average training loss: 11.0753812789917
+Testing...
+
+[INFO] Epoch 125/200 average testing loss: 523.0786
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 126/200 average training loss: 11.069478034973145
+Testing...
+
+[INFO] Epoch 126/200 average testing loss: 532.2384
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 127/200 average training loss: 11.759547233581543
+Epoch 00127: reducing learning rate of group 0 to 6.4000e-04.
+Testing...
+
+[INFO] Epoch 127/200 average testing loss: 527.0551
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 128/200 average training loss: 8.694723129272461
+Testing...
+
+[INFO] Epoch 128/200 average testing loss: 532.1266
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 129/200 average training loss: 7.549378871917725
+Testing...
+
+[INFO] Epoch 129/200 average testing loss: 526.8323
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 130/200 average training loss: 7.956856727600098
+Testing...
+
+[INFO] Epoch 130/200 average testing loss: 526.5271
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 131/200 average training loss: 7.931824684143066
+Testing...
+
+[INFO] Epoch 131/200 average testing loss: 528.1441
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 132/200 average training loss: 7.608105182647705
+Testing...
+
+[INFO] Epoch 132/200 average testing loss: 528.9141
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 133/200 average training loss: 7.637587070465088
+Testing...
+
+[INFO] Epoch 133/200 average testing loss: 525.9891
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 134/200 average training loss: 7.505965232849121
+Testing...
+
+[INFO] Epoch 134/200 average testing loss: 528.6812
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 135/200 average training loss: 7.3458428382873535
+Testing...
+
+[INFO] Epoch 135/200 average testing loss: 557.0611
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 136/200 average training loss: 7.161319255828857
+Testing...
+
+[INFO] Epoch 136/200 average testing loss: 522.7567
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 137/200 average training loss: 7.020509243011475
+Testing...
+
+[INFO] Epoch 137/200 average testing loss: 526.0171
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 138/200 average training loss: 7.218677997589111
+Testing...
+
+[INFO] Epoch 138/200 average testing loss: 529.3014
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 139/200 average training loss: 7.294610977172852
+Testing...
+
+[INFO] Epoch 139/200 average testing loss: 530.3901
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 140/200 average training loss: 7.200446605682373
+Testing...
+
+[INFO] Epoch 140/200 average testing loss: 530.2402
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 141/200 average training loss: 6.988916873931885
+Testing...
+
+[INFO] Epoch 141/200 average testing loss: 529.2650
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 142/200 average training loss: 6.744138240814209
+Testing...
+
+[INFO] Epoch 142/200 average testing loss: 526.9001
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 143/200 average training loss: 6.888150691986084
+Testing...
+
+[INFO] Epoch 143/200 average testing loss: 535.3625
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 144/200 average training loss: 6.824527740478516
+Testing...
+
+[INFO] Epoch 144/200 average testing loss: 528.7876
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 145/200 average training loss: 6.446276664733887
+Testing...
+
+[INFO] Epoch 145/200 average testing loss: 529.6504
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 146/200 average training loss: 6.662658214569092
+Testing...
+
+[INFO] Epoch 146/200 average testing loss: 532.7914
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 147/200 average training loss: 6.997770309448242
+Testing...
+
+[INFO] Epoch 147/200 average testing loss: 531.1873
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 148/200 average training loss: 6.420319557189941
+Testing...
+
+[INFO] Epoch 148/200 average testing loss: 532.3486
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 149/200 average training loss: 6.279592990875244
+Testing...
+
+[INFO] Epoch 149/200 average testing loss: 531.2255
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 150/200 average training loss: 6.524520397186279
+Testing...
+
+[INFO] Epoch 150/200 average testing loss: 534.3209
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 151/200 average training loss: 6.737343788146973
+Testing...
+
+[INFO] Epoch 151/200 average testing loss: 538.5794
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 152/200 average training loss: 6.612253189086914
+Testing...
+
+[INFO] Epoch 152/200 average testing loss: 538.6350
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 153/200 average training loss: 6.04298210144043
+Testing...
+
+[INFO] Epoch 153/200 average testing loss: 538.1331
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 154/200 average training loss: 6.124975204467773
+Testing...
+
+[INFO] Epoch 154/200 average testing loss: 536.1370
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 155/200 average training loss: 6.394048690795898
+Testing...
+
+[INFO] Epoch 155/200 average testing loss: 533.6057
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 156/200 average training loss: 6.0468525886535645
+Testing...
+
+[INFO] Epoch 156/200 average testing loss: 528.2395
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 157/200 average training loss: 6.154452800750732
+Testing...
+
+[INFO] Epoch 157/200 average testing loss: 532.3132
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 158/200 average training loss: 6.36323356628418
+Testing...
+
+[INFO] Epoch 158/200 average testing loss: 537.8452
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 159/200 average training loss: 5.75580358505249
+Testing...
+
+[INFO] Epoch 159/200 average testing loss: 531.6595
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 160/200 average training loss: 6.02993106842041
+Testing...
+
+[INFO] Epoch 160/200 average testing loss: 530.5206
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 161/200 average training loss: 5.878595352172852
+Testing...
+
+[INFO] Epoch 161/200 average testing loss: 529.8807
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 162/200 average training loss: 5.838817596435547
+Testing...
+
+[INFO] Epoch 162/200 average testing loss: 539.4620
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 163/200 average training loss: 6.22382116317749
+Testing...
+
+[INFO] Epoch 163/200 average testing loss: 534.1433
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 164/200 average training loss: 5.467390060424805
+Testing...
+
+[INFO] Epoch 164/200 average testing loss: 537.6276
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 165/200 average training loss: 5.665892601013184
+Testing...
+
+[INFO] Epoch 165/200 average testing loss: 535.2263
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 166/200 average training loss: 6.206892490386963
+Testing...
+
+[INFO] Epoch 166/200 average testing loss: 539.9645
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 167/200 average training loss: 5.596442222595215
+Testing...
+
+[INFO] Epoch 167/200 average testing loss: 539.5752
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 168/200 average training loss: 6.031658172607422
+Testing...
+
+[INFO] Epoch 168/200 average testing loss: 534.7975
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 169/200 average training loss: 5.482824325561523
+Testing...
+
+[INFO] Epoch 169/200 average testing loss: 534.7558
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 170/200 average training loss: 5.5102691650390625
+Epoch 00170: reducing learning rate of group 0 to 5.1200e-04.
+Testing...
+
+[INFO] Epoch 170/200 average testing loss: 539.3711
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 171/200 average training loss: 4.93604850769043
+Testing...
+
+[INFO] Epoch 171/200 average testing loss: 534.1645
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 172/200 average training loss: 3.9274628162384033
+Testing...
+
+[INFO] Epoch 172/200 average testing loss: 533.3596
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 173/200 average training loss: 3.953296661376953
+Testing...
+
+[INFO] Epoch 173/200 average testing loss: 532.3051
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 174/200 average training loss: 4.511486530303955
+Testing...
+
+[INFO] Epoch 174/200 average testing loss: 542.5376
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 175/200 average training loss: 3.8891334533691406
+Testing...
+
+[INFO] Epoch 175/200 average testing loss: 532.3441
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 176/200 average training loss: 3.7538609504699707
+Testing...
+
+[INFO] Epoch 176/200 average testing loss: 533.8358
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 177/200 average training loss: 3.87920880317688
+Testing...
+
+[INFO] Epoch 177/200 average testing loss: 538.0677
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 178/200 average training loss: 4.042640686035156
+Testing...
+
+[INFO] Epoch 178/200 average testing loss: 539.2223
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 179/200 average training loss: 3.917665481567383
+Testing...
+
+[INFO] Epoch 179/200 average testing loss: 533.3078
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 180/200 average training loss: 3.8544869422912598
+Testing...
+
+[INFO] Epoch 180/200 average testing loss: 536.1497
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 181/200 average training loss: 4.1275954246521
+Testing...
+
+[INFO] Epoch 181/200 average testing loss: 538.2121
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 182/200 average training loss: 4.360844612121582
+Epoch 00182: reducing learning rate of group 0 to 4.0960e-04.
+Testing...
+
+[INFO] Epoch 182/200 average testing loss: 535.8180
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 183/200 average training loss: 3.487546443939209
+Testing...
+
+[INFO] Epoch 183/200 average testing loss: 537.1958
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 184/200 average training loss: 2.467444896697998
+Testing...
+
+[INFO] Epoch 184/200 average testing loss: 538.5895
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 185/200 average training loss: 2.6912310123443604
+Testing...
+
+[INFO] Epoch 185/200 average testing loss: 536.6245
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 186/200 average training loss: 2.8548665046691895
+Testing...
+
+[INFO] Epoch 186/200 average testing loss: 539.1413
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 187/200 average training loss: 2.81209397315979
+Testing...
+
+[INFO] Epoch 187/200 average testing loss: 541.8678
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 188/200 average training loss: 2.6935300827026367
+Testing...
+
+[INFO] Epoch 188/200 average testing loss: 542.4183
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 189/200 average training loss: 2.6666791439056396
+Testing...
+
+[INFO] Epoch 189/200 average testing loss: 536.4286
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 190/200 average training loss: 2.68957781791687
+Epoch 00190: reducing learning rate of group 0 to 3.2768e-04.
+Testing...
+
+[INFO] Epoch 190/200 average testing loss: 538.6403
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 191/200 average training loss: 2.405658483505249
+Testing...
+
+[INFO] Epoch 191/200 average testing loss: 538.6089
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 192/200 average training loss: 1.857235074043274
+Testing...
+
+[INFO] Epoch 192/200 average testing loss: 539.4175
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 193/200 average training loss: 1.9347193241119385
+Testing...
+
+[INFO] Epoch 193/200 average testing loss: 541.5103
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 194/200 average training loss: 2.071385383605957
+Testing...
+
+[INFO] Epoch 194/200 average testing loss: 541.9908
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 195/200 average training loss: 2.141538381576538
+Testing...
+
+[INFO] Epoch 195/200 average testing loss: 541.0970
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 196/200 average training loss: 1.9082659482955933
+Testing...
+
+[INFO] Epoch 196/200 average testing loss: 539.3544
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 197/200 average training loss: 1.928886890411377
+Testing...
+
+[INFO] Epoch 197/200 average testing loss: 538.5484
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 198/200 average training loss: 1.8980095386505127
+Epoch 00198: reducing learning rate of group 0 to 2.6214e-04.
+Testing...
+
+[INFO] Epoch 198/200 average testing loss: 547.5992
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 199/200 average training loss: 1.7844982147216797
+Testing...
+
+[INFO] Epoch 199/200 average testing loss: 543.6341
+
+--------------------------------------------------------------
+Training...
+
+[INFO] Epoch 200/200 average training loss: 1.4569731950759888
+Testing...
+
+[INFO] Epoch 200/200 average testing loss: 543.1985
+
+--------------------------------------------------------------

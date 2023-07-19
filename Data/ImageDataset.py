@@ -241,3 +241,74 @@ class Heightmap2PowerclassDataset(Dataset):
         if self.transform is not None:
             heightmap = self.transform(heightmap)
         return heightmap, power_grp
+    
+
+class Image2PowerclassDataset(Dataset):
+    """
+        This dataset is for training the inference directly between image and power class
+
+        The power classification is done during the preprocessing
+        The classification is based on the distribution (histogram)
+        of average power recorded
+    """
+
+    def __init__(self,
+                 img_src_folder_path,
+                 classification_datafile_src_path,
+                 transform=None):
+        """
+
+        :param img_src_folder_path: the folder for images
+        :param classification_datafile_src_path: the power classification csv file
+        """
+
+        self.img_src_folder_path = img_src_folder_path
+        self.classification_datafile_src_path = classification_datafile_src_path
+        self.image_extension = ['.png', '.PNG', '.jpg', '.JPG']
+        self.transform = transform
+        self.img_classification_link = []
+        self.pwdf = pd.read_csv(self.classification_datafile_src_path, dtype={'terrainID': str})
+        for dirname in os.listdir(self.img_src_folder_path):
+            for filename in os.listdir(os.path.join(img_src_folder_path, dirname)):
+                if any(filename.endswith(extension) for extension in self.image_extension):
+                    terrainID, position, direction = get_info(filename)
+                    power_grp = query_power_class(self.pwdf, terrainID, position, direction)
+                    if power_grp is None:
+                        print("[ERROR] The power group for [terrainID: {}, position: {}, direction: {}] does not "
+                                "exist")
+                    self.img_classification_link.append(
+                        {
+                            "img_path": os.path.abspath(os.path.join(
+                                self.img_src_folder_path,
+                                dirname,
+                                filename
+                            )), 
+                            "power_group": power_grp
+                        }
+                    )
+
+    def __len__(self):
+        """
+            This function returns the number of the images in the dataset
+
+            :return: The length of the "images" attribute of the object.
+        """
+        return len(self.img_classification_link)
+
+    def __getitem__(self, index):
+        """
+            This function returns a normalized and its corresponding power group
+
+            :param index: The index parameter is the index of the item that needs to be retrieved from the
+            dataset. In this case, it is used to retrieve the filepath and power_group of the image at the
+            specified index
+
+            :return: A dict containing the normalized heightmap and the power group associated with the
+            heightmap at the given index.
+        """
+        img_path, power_grp = self.img_classification_link[index]['img_path'], \
+        self.img_classification_link[index]['power_group']
+        img = Image.open(img_path).convert('RGB')
+        if self.transform is not None:
+            img = self.transform(img)
+        return img, power_grp

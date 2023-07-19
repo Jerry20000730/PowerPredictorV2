@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 
 def conv3x3(in_planes, out_planes, stride=1):
@@ -79,7 +80,9 @@ class ResNet(nn.Module):
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
-        self.fc = nn.Linear(512 * self.expansion, num_classes)
+        self.fc1 = nn.Linear(512 * self.expansion, 100)
+        self.fc2 = nn.Linear(100, num_classes)
+        self.dropout = nn.Dropout(p=0.3)
 
     def _make_layer(self, block, out_channels, blocks, stride=1):
         downsample = None
@@ -111,7 +114,8 @@ class ResNet(nn.Module):
 
         x = self.avgpool(x)
         x = torch.flatten(x, 1)
-        x = self.fc(x)
+        x = self.dropout(F.relu(self.fc1(x)))
+        x = self.fc2(x)
 
         return x
 
